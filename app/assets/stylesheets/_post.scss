@@ -1,0 +1,101 @@
+// Place all the styles related to the post controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  background-color: #dab7ab;
+  padding-top: 10px;
+
+  .header{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    height: 80px;
+    width: 100%;
+    background-color:#79c0d8;
+    filter: drop-shadow(3px 3px 3px rgba(100,100,100,0.6));
+    &-title{
+      font-size: 40px;
+      float: left;
+      margin: 10px 20px 10px 130px;
+    }
+    
+    &-items{
+      float: right;
+      display: flex;
+      margin: 30px 150px 30px 20px;
+      &__registar{
+        margin-right: 15px;
+        font-size: 20px;
+      }
+      &__login{
+        font-size: 20px;
+      }
+    }
+  }
+
+  .contents{
+    background-color: white;
+    width: 70%;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 10px;
+    overflow: scroll;
+    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.3);
+    .content{
+      display: flex;
+      flex-flow: column;
+      &__main{
+      margin: 5px 25px;
+      width: 95%;
+      height: 60px;
+      border: solid 1px gainsboro;
+      display: flex;
+      justify-content: space-between;
+      -webkit-transition: 0.3s ease-in-out;
+      &:hover{
+        background-color: lightblue;
+        color: white;
+      }
+      &__text{
+      font-size: 15px;
+      margin: 20px 10px;
+      }
+      &__detail{
+        margin: 30px 10px 0px 10px;
+        &__name{
+        font-size: 10px;
+        }
+        &__date{
+        font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+  .form{
+    background-color: #dab7ab;
+    padding: 10px 50px 10px 280px;
+    .input_form{
+      display: flex;
+      flex-flow: column;
+      width: 80%;
+      filter: drop-shadow(5px 5px 2px rgba(0,0,0,0.3));
+      &__text{
+        width: 200px;
+        height: 300px;
+      }
+      .submit-btn{
+        width: 150px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+    
+  }
+}
